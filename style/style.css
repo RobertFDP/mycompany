@@ -1,0 +1,571 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  width: 100%;
+  background: #000;
+  display: flex;
+}
+
+.header_logo {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 800;
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 56px;
+  margin-left: 12%;
+}
+
+nav {
+  margin-top: 56px;
+  margin-left: 29%;
+}
+
+.topnav a {
+  color: #fff;
+  text-align: center;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid #fcac45;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+main .main_welcome {
+  background: #000;
+  text-align: center;
+  padding: 200px 0 410px 0;
+}
+
+main .main_welcome h1{
+  color: #999999; 
+  font-size: 44px;
+}
+
+main .main_welcome p{
+  color: #999999;
+  font-size: 20px;
+}
+
+.mycompany {
+  color: #fcac45;
+}
+
+.wrapper {
+  width: 76%;
+  margin: 0 auto;
+}
+
+main .main_about {
+  display: flex;
+  padding: 100px 0 100px 0;
+}
+
+.about_right {
+  margin-left: 175px;
+}
+
+.about_right h1{
+  display: inline-block;  /* inline-block нужно чтобы полоса была под текстом */
+  border-bottom: 3px solid #fcac45;
+  padding-bottom: 30px;
+}
+
+.about_right h1 span {
+  font-weight: 400;
+}
+
+.about_right p {
+  margin: 30px 0 50px 0;
+  color: #6c6c6c;
+}
+
+.about_right li {
+  background: url(../img/mark.png) 0px no-repeat; /* Вставляет маркеры перед li */
+  padding-left: 25px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  color: #5a5a5a;
+}
+
+.about_right li span {
+  font-weight: 800;
+}
+
+.mw-100 {
+  min-width: 100%;
+}
+
+
+.main_team {
+  background: #000;
+  text-align: center;
+  padding: 100px 0 165px 0;
+  color: #fff;
+}
+
+
+.main_team h1 {
+  font-size: 44px;
+  padding-bottom: 30px;
+}
+
+.main_team h1:after {
+  content: "";
+  display: block;
+  margin: 30px auto;
+  width: 100px;
+  border-top: 30px;
+  border-bottom: 3px solid #fcac45;
+}
+
+
+
+.photo {
+  background: #d7d7d7;
+  border-radius: 50%;
+  height: 125px;
+  width: 125px;
+  margin: 20px auto;
+}
+
+.team_cards {
+  display: flex;
+}
+
+.card {
+  margin: 0 40px;
+}
+
+.name {
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+
+.position {
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
+.about_position {
+  font-size: 14px;
+}
+
+.services_cards {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 50px;
+}
+
+.main_services h1{
+  text-align: center;
+  padding: 100px 0 30px 0;
+}
+
+
+
+.main_services h1::after {
+  content: "";
+  display: block;
+  margin: 30px auto;
+  width: 100px;
+  border-top: 30px;
+  border-bottom: 3px solid #fcac45;
+}
+
+.main_services p{
+  color: #6c6c6c;
+  margin-bottom: 100px;
+}
+
+.services_card h4 {
+  margin: 30px 0 25px 0;
+  font-size: 18px;
+}
+
+.services_card p {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.main_clients {
+  background: #000;
+  padding: 100px 0 210px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.main_clients h1 {
+  text-align: center;
+  padding: 100px 0 30px 0;
+}
+
+.main_clients h1::after{
+  content: "";
+  display: block;
+  margin: 30px auto 115px auto;
+  width: 100px;
+  border-top: 30px;
+  border-bottom: 3px solid #fcac45;
+}
+
+.clients {
+  display: flex;
+}
+
+.main_clients img {
+  margin-left: 30px;
+}
+
+
+
+.main_testimonials {
+  background: #000;
+  text-align: center;
+  color: #fff;
+}
+
+.main_testimonials h1 {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.main_testimonials h1::after{
+  content: "";
+  display: block;
+  margin: 30px auto 120px auto;
+  width: 100px;
+  border-top: 30px;
+  border-bottom: 3px solid #fcac45;
+}
+
+.main_testimonials p:nth-child(2) {
+  margin-bottom: 50px;
+}
+
+.main_testimonials p:nth-child(3) {
+  margin-bottom: 175px;
+}
+
+.main_work {
+  text-align: center;
+  margin: 100px 0 100px 0;
+}
+
+.gallery img {
+  width: 217px;
+  height: 240px;
+}
+
+.main_work h1::after {
+  content: "";
+  display: block;
+  margin: 30px auto 60px auto;
+  width: 100px;
+  border-top: 30px;
+  border-bottom: 3px solid #fcac45;
+}
+
+.main_work p {
+  margin-bottom: 180px;
+  color: #6c6c6c;
+  text-align: center;
+}
+
+.main_work img {
+  padding: 0 30px 30px 0;
+}
+
+
+.main_work img:hover {
+  opacity: 0.9;
+}
+
+.gallery .line1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.gallery .line2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.gallery .line3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact_form { 
+  padding: 100px 0 100px 0;
+}
+
+.contact_form h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #000;
+}
+
+
+
+.contact_form h1::after{
+  content: "";
+  display: block;
+  margin: 30px auto 60px auto;
+  width: 100px;
+  border-top: 30px;
+  border-bottom: 3px solid #fcac45;
+}
+
+.contact_form p {
+  text-align: center;
+}
+
+form p {
+  text-align: left;
+}
+
+
+
+.contact_wrapper {
+  width: 753px;
+  margin: 0 auto; /* Отображает блок по центру */
+  color: #636363;
+}
+
+.red {
+  color: #db0000;
+}
+
+.form_inputs {
+  display: flex; /* Располагает горизонатльно инпуты */
+  margin-top: 100px;
+}
+
+
+input {
+  width: 360px;
+  height: 40px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+input:first-of-type {
+  margin-right: 23px;
+}
+
+textarea {
+  width: 100%;
+  height: 163px;
+}
+
+input, textarea {
+  border: 1px solid #999999;
+  margin-top: 10px;
+}
+
+.form_inputs p{
+  text-align: left;
+}
+
+.button_block {
+  display: flex;
+  justify-content: flex-end;
+}
+
+input[type=submit] {
+  width: 165px;
+  height: 40px;
+  background: #fcac45;
+  color: #fff;
+  margin-right: 0;
+  margin-top: 30px;
+}
+
+p.message {
+  text-align: left;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background: #222222;
+  padding: 30px 0 30px 0;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+
+.social img{
+  margin-left: 15px;
+}
+
+.social img:hover {
+  opacity: 0.6;
+}
+
+
+@media screen and (max-width: 1280px) {
+  nav {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 1105px) {
+  nav {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 1039px) {
+  .topnav a {
+     display: none;               /* Когда ширина экрана меньше 1010px то ссылки пропадают */
+  }
+  .topnav a.icon {                /* И заместо ссылок появляется иконка */
+    float: right;
+    margin-top: -17px;
+    display: block;
+    color: #fff;
+    font-size: 25px;
+  }
+  nav {
+    width: 100%;                  /* Иконка переместится вправо */
+  }
+  .topnav.responsive {
+    position: relative;
+    top: 15%;
+    left: -200px;
+  }
+  header .topnav.responsive {
+    height: 340px;                /* При нажатии на кнопку высота шапки будет 340 пикселей */
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    top: -50px;
+    right: -200px;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+
+
+  main .main_welcome {
+    padding: 50px 0 50px 0
+  }
+  main .main_welcome p {
+    font-size: 14px;
+  }
+  main .main_welcome h1 {
+    font-size: 25px;
+  }
+  .mw-100 {
+    max-width: 100%;
+  }
+  .main_about {
+    flex-direction: column;
+  }
+  .about_right {
+    text-align: center;  /* Ставит текст по центру */
+    margin-left: 0;
+  }
+  .about_right li {
+    text-align: left;
+  }
+  .about_right {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .team_cards {
+    flex-direction: column;
+  }
+
+  .services_cards {
+    grid-template-columns: auto; /* Все переносится в одну колонку */
+  }
+
+  .line1 img:not(:first-child) {
+    display: none;
+  }
+
+  .line2 img:not(:first-child) {
+    display: none;
+  }
+
+  .line3 img:not(:first-child) {
+    display: none;
+  }
+
+  .line1 {
+    margin-left: 35.85%
+  }
+
+  .line2 {
+    margin-left: 35.85%
+  }
+
+  .line3 {
+    margin-left: 35.85%
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-content: space-between;
+
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-content: space-between;
+
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-content: space-between;
+
+  }
+
+  .clients {
+    height: 200px;
+    flex-flow: row wrap;
+    align-content: space-between;
+  }
+}
